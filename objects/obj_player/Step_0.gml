@@ -1,47 +1,90 @@
-#region jumping and gravity
+#region player movement
 
-// rudimentary gravity
-// for some reason gravity was being very odd so i implemented it myself
-gravity = defaultGravity;
-
-// if grounded, then dont move down, and jump if wanted
-if (place_meeting(x, y + 1, obj_solidBlock))
+// shouldnt be able to do any movement while dashing
+if (!dashing)
 {
-	// setting it to a low value so we actually touch the ground
-	gravity = 0;
 	
-	if (keyboard_check(vk_space) || keyboard_check(ord("W")))
-		vspeed = -jumpSpeed;
-}
+	#region jumping and gravity
 
-#endregion
+	// making sure we have gravity
+	gravity = defaultGravity;
 
-#region horizontal movement
+	// if grounded
+	if (place_meeting(x, y + 1, obj_solidBlock))
+	{
+		// stop gravity from doing anything
+		gravity = 0;
+	
+		// if we touch the ground we get all our jumps back
+		jumpsRemaining = numJumps;
+	}
+	
+	// if we have jumps remaining then we can jump
+	if (jumpsRemaining > 0)
+	{
+		if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W")))
+		{
+			vspeed = -jumpSpeed;
+		
+			// remove 1 from remaining jumps since we jumped
+			jumpsRemaining--;
+		}
+	}
 
-// keyboard checks
-// using an acceleration version of movement instead of position changing so it feels nicer
-if (keyboard_check(ord("A")))
-{
-	horizontalSpeed -= hAccelSpeed;
+	#endregion
+
+	#region horizontal movement and dashing
+
+	var dashDir = 0;
+	
+	// keyboard checks
+	// using an acceleration version of movement instead of position changing so it feels nicer
+	if (keyboard_check(ord("A")))
+	{
+		horizontalSpeed -= hAccelSpeed;
+		dashDir = -1;
+	}
+	else if (keyboard_check(ord("D")))
+	{
+		horizontalSpeed += hAccelSpeed;
+		dashDir = 1;
+	}
+	// if the player isnt pressing A or D, decelerate the speed
+	else
+		horizontalSpeed -= sign(horizontalSpeed) * hDecelSpeed;
+	
+	// if the speed is low enough, just set it to 0, else it can bounce around never getting to 0 speed
+	if (abs(horizontalSpeed) <= 1)
+		horizontalSpeed = 0;
+	
+	// clamp horizontal speed to its max speed
+	horizontalSpeed = clamp(horizontalSpeed, -maxSpeed, maxSpeed);
+	
+	// if the player decides to dash, is moving towards a direction, and isnt on cooldown
+	if (keyboard_check_pressed(ord("Q")) && dashDir != 0 && !onDashCooldown)
+	{
+		currentDashDirection = dashDir;
+		dashing = true;
+		
+		// go dash speed in the direction the player was moving
+		horizontalSpeed = currentDashDirection * dashSpeed;
+		
+		alarm[0] = framesDashing; 
+	}
+
+	#endregion
 }
-else if (keyboard_check(ord("D")))
-{
-	horizontalSpeed += hAccelSpeed;
-}
-// if the player isnt pressing A or D, decelerate the speed
 else
-	horizontalSpeed -= sign(horizontalSpeed) * hDecelSpeed;
+{
+	// if we are dashing, we dont want to move vertically until its over
+	gravity = 0;
+	vspeed = 0;
+}
 
-// if the speed is low enough, just set it to 0, else it can bounce around never getting to 0 speed
-if (abs(horizontalSpeed) <= 1)
-	horizontalSpeed = 0;
-
-#endregion
-
-// clamp the speeds to their max speeds
-// especially needed for horizontal speed since its acceleration based
-horizontalSpeed = clamp(horizontalSpeed, -maxSpeed, maxSpeed);
+// clamp vertical speed to the max falling speed
 vspeed = min(vspeed, maxFallingSpeed);
 
 // this is an extremely useful function that was not even mentioned in the workshops
 move_and_collide(horizontalSpeed, 0, obj_solidBlock);
+
+#endregion
