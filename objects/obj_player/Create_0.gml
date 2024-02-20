@@ -10,3 +10,19 @@ jumpsRemaining = numJumps;
 dashing = false;
 currentDashDirection = 0;
 onDashCooldown = false;
+
+// used to see if the player fell off a platform rather than jumped off
+prevGrounded = false;
+jumping = false;
+
+// used in end step, so the player moves after the collision is finished
+movePlayerToBBoxTop = false;
+movePlayerToBBoxBottom = false;
+
+// previous frame bbox variables
+prevTop = 0;
+prevBottom = 0;
+
+// collision bbox variables
+otherTop = 0;
+otherBottom = 0;

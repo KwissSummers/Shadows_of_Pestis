@@ -9,21 +9,38 @@ if (!dashing)
 	// making sure we have gravity
 	gravity = defaultGravity;
 
-	// if grounded
-	if (place_meeting(x, y + 1, obj_solidBlock))
+	// if the player is touching the ground
+	var grounded = place_meeting(x, y + 1, obj_solidBlock);
+	if (grounded)
 	{
 		// stop gravity from doing anything
 		gravity = 0;
 	
 		// if we touch the ground we get all our jumps back
 		jumpsRemaining = numJumps;
+		
+		// when we touch the ground, we arent jumping
+		jumping = false;
 	}
+	// if we arent grounded, we were grounded the frame before, and if we arent jumping
+	// basically for when the player falls off a surface
+	else if (prevGrounded && !jumping)
+	{
+		jumpsRemaining--;
+	}
+	
+	// grounded variable for next frame
+	prevGrounded = grounded;
 	
 	// if we have jumps remaining then we can jump
 	if (jumpsRemaining > 0)
 	{
 		if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W")))
 		{
+			// jumping variable used so we dont lose our double jump
+			jumping = true;
+			
+			// jumping speed
 			vspeed = -jumpSpeed;
 		
 			// remove 1 from remaining jumps since we jumped
