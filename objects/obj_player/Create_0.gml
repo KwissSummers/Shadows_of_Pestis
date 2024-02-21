@@ -1,9 +1,9 @@
-gravity_direction = 270;
-
-// horizontal speed is an instance variable instead of using hspeed
-// so we can use the move_and_collide function for horizontal movement
+// instead of using hspeed, vspeed, and gamemakers subpar collision event system,
+// im manually setting the speed and moving the character using move_and_collide
 horizontalSpeed = 0;
+verticalSpeed = 0;
 
+// start the player off with the max amount of jumps (will probably change later)
 jumpsRemaining = numJumps;
 
 // dash instance variables
@@ -12,17 +12,9 @@ currentDashDirection = 0;
 onDashCooldown = false;
 
 // used to see if the player fell off a platform rather than jumped off
-prevGrounded = false;
+fellOffPlatform = false;
 jumping = false;
 
-// used in end step, so the player moves after the collision is finished
-movePlayerToBBoxTop = false;
-movePlayerToBBoxBottom = false;
-
-// previous frame bbox variables
-prevTop = 0;
-prevBottom = 0;
-
-// collision bbox variables
-otherTop = 0;
-otherBottom = 0;
+// coyote time is used so the player can still jump a few frames after falling off a ledge
+// just used so it doesnt feel unfair when the player tries to jump and it doesnt work
+framesSinceGrounded = 0;
