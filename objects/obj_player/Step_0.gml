@@ -32,6 +32,8 @@ if (!dashing)
 	{
 		jumpsRemaining--;
 		fellOffPlatform = true;
+		
+		show_debug_message("Out of coyote time");
 	}
 	
 	// if the player isnt grounded, add one to the frames since grounded
@@ -41,8 +43,10 @@ if (!dashing)
 	// if we have jumps remaining then we can jump
 	if (jumpsRemaining > 0)
 	{
-		if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("W")))
+		if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up))
 		{
+			show_debug_message("Jump number: " + string(numJumps - jumpsRemaining + 1));
+			
 			// jumping variable used so we dont lose our double jump
 			jumping = true;
 			
@@ -62,12 +66,12 @@ if (!dashing)
 	
 	// keyboard checks
 	// using an acceleration version of movement instead of position changing so it feels nicer
-	if (keyboard_check(ord("A")))
+	if (keyboard_check(vk_left))
 	{
 		horizontalSpeed -= hAccelSpeed;
 		dashDir = -1;
 	}
-	else if (keyboard_check(ord("D")))
+	else if (keyboard_check(vk_right))
 	{
 		horizontalSpeed += hAccelSpeed;
 		dashDir = 1;
@@ -84,7 +88,7 @@ if (!dashing)
 	horizontalSpeed = clamp(horizontalSpeed, -maxSpeed, maxSpeed);
 	
 	// if the player decides to dash, is moving towards a direction, and isnt on cooldown
-	if (keyboard_check_pressed(ord("Q")) && dashDir != 0 && !onDashCooldown)
+	if (keyboard_check_pressed(ord("Z")) && dashDir != 0 && !onDashCooldown)
 	{
 		currentDashDirection = dashDir;
 		dashing = true;
