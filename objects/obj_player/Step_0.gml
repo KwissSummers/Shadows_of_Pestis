@@ -70,11 +70,14 @@ if (!dashing)
 	{
 		horizontalSpeed -= hAccelSpeed;
 		dashDir = -1;
+		
+		image_xscale = -1;
 	}
 	else if (keyboard_check(vk_right))
 	{
 		horizontalSpeed += hAccelSpeed;
-		dashDir = 1;
+		
+		image_xscale = 1;
 	}
 	// if the player isnt pressing A or D, decelerate the speed
 	else
@@ -161,5 +164,16 @@ if (array_length(verticalCollision) > 0)
 }
 
 #endregion
+
+#endregion
+
+#region combat
+
+if (keyboard_check_pressed(ord("X")))
+{
+	slashObject = instance_create_layer(x, y, "Instances", obj_slash);
+	slashDirection = image_xscale;
+	slashObject.image_xscale = slashDirection;
+}
 
 #endregion

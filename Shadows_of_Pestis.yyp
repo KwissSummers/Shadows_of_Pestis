@@ -31,12 +31,13 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
     {"id":{"name":"spr_playerPlaceholder","path":"sprites/spr_playerPlaceholder/spr_playerPlaceholder.yy",},},
     {"id":{"name":"spr_solidPlaceholder","path":"sprites/spr_solidPlaceholder/spr_solidPlaceholder.yy",},},
     {"id":{"name":"obj_solidBlock","path":"objects/obj_solidBlock/obj_solidBlock.yy",},},
+    {"id":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
