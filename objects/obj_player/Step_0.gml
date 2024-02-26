@@ -76,6 +76,7 @@ if (!dashing)
 	else if (keyboard_check(vk_right))
 	{
 		horizontalSpeed += hAccelSpeed;
+		dashDir = 1;
 		
 		image_xscale = 1;
 	}
@@ -93,11 +94,10 @@ if (!dashing)
 	// if the player decides to dash, is moving towards a direction, and isnt on cooldown
 	if (keyboard_check_pressed(ord("Z")) && dashDir != 0 && !onDashCooldown)
 	{
-		currentDashDirection = dashDir;
 		dashing = true;
 		
 		// go dash speed in the direction the player was moving
-		horizontalSpeed = currentDashDirection * dashSpeed;
+		horizontalSpeed = dashDir * dashSpeed;
 		
 		alarm[0] = framesDashing; 
 	}
@@ -169,11 +169,35 @@ if (array_length(verticalCollision) > 0)
 
 #region combat
 
-if (keyboard_check_pressed(ord("X")))
+// basic slash attack
+// if the button is pressed and we arent attacking already
+if (keyboard_check_pressed(ord("X")) && !attacking)
 {
-	slashObject = instance_create_layer(x, y, "Instances", obj_slash);
-	slashDirection = image_xscale;
-	slashObject.image_xscale = slashDirection;
+	// create the slash and make it face the direction we are looking
+	var slashObject = instance_create_layer(x, y, "Instances", obj_slash);
+	slashObject.image_xscale = image_xscale;
+	
+	// attack cooldown
+	// for the cooldown, im using the time that the attack will be out plus some extra frames
+	// so you can never attack while a slash is out (unless the offset is negative)
+	attacking = true;
+	alarm[2] = slashObject.durationFrames + slashCooldownOffsetFrames;
+}
+
+// ranged attack
+// if the button is pressed, we arent attacking already, and we have 3 charges
+if (keyboard_check_pressed(ord("C")) && numCharges == 3 && !attacking)
+{
+	// create the ranged attack in the direction we are facing
+	var rangedAttackObject = instance_create_layer(x, y, "Instances", obj_rangedAttack);
+	rangedAttackObject.image_xscale = image_xscale;
+	
+	// make it so we have no charges after we attack
+	numCharges = 0;
+	
+	// attack cooldown
+	attacking = true;
+	alarm[2] = rangedAttackObject.durationFrames + rangedAttackCooldownOffsetFrames;
 }
 
 #endregion

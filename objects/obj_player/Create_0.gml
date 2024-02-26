@@ -9,7 +9,6 @@ jumpsRemaining = numJumps;
 
 // dash instance variables
 dashing = false;
-currentDashDirection = 0;
 onDashCooldown = false;
 
 // used to see if the player fell off a platform rather than jumped off
@@ -20,5 +19,10 @@ jumping = false;
 // just used so it doesnt feel unfair when the player tries to jump and it doesnt work
 framesSinceGrounded = 0;
 
-slashObject = noone;
-slashDirection = 0;
+// starting charges for ranged attack
+numCharges = 0;
+
+// current combat state
+// TODO: whenever we start doing custom textures and polish, make the attacks look correct
+// such as ranged attack fading out after use
+attacking = false;

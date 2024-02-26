@@ -1,7 +1,6 @@
 /// @description stop dashing
 dashing = false;
-horizontalSpeed = maxSpeed * currentDashDirection;
-currentDashDirection = 0;
+horizontalSpeed = maxSpeed * image_xscale;
 
 // set dash cooldown
 onDashCooldown = true;
