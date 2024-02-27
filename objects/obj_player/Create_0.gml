@@ -26,3 +26,5 @@ numCharges = 0;
 // TODO: whenever we start doing custom textures and polish, make the attacks look correct
 // such as ranged attack fading out after use
 attacking = false;
+
+invincible = false;

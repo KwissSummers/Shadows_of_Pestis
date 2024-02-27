@@ -5,7 +5,7 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},"propertyId":{"name":"damage","path":"objects/obj_slash/obj_slash.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},"propertyId":{"name":"damage","path":"objects/obj_slash/obj_slash.yy",},"value":"2",},
   ],
   "parent": {
     "name": "Objects",

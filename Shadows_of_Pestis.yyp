@@ -44,6 +44,8 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"spr_basicRatPlaceholder","path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},},
+    {"id":{"name":"obj_basicRat","path":"objects/obj_basicRat/obj_basicRat.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
   "RoomOrderNodes": [
