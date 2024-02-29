@@ -27,4 +27,6 @@ numCharges = 0;
 // such as ranged attack fading out after use
 attacking = false;
 
+// player combat values
+hp = startingHealth;
 invincible = false;

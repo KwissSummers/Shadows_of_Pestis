@@ -23,6 +23,7 @@
     {"name":"spr_enemyPlaceholder","order":3,"path":"sprites/spr_enemyPlaceholder/spr_enemyPlaceholder.yy",},
     {"name":"spr_solidPlaceholder","order":1,"path":"sprites/spr_solidPlaceholder/spr_solidPlaceholder.yy",},
     {"name":"obj_solidBlock","order":1,"path":"objects/obj_solidBlock/obj_solidBlock.yy",},
+    {"name":"obj_enemySlash","order":6,"path":"objects/obj_enemySlash/obj_enemySlash.yy",},
     {"name":"obj_enemy","order":3,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"obj_slash","order":2,"path":"objects/obj_slash/obj_slash.yy",},
     {"name":"spr_basicRatPlaceholder","order":5,"path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},

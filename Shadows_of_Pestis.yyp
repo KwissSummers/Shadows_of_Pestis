@@ -41,6 +41,7 @@
     {"id":{"name":"spr_enemyPlaceholder","path":"sprites/spr_enemyPlaceholder/spr_enemyPlaceholder.yy",},},
     {"id":{"name":"spr_solidPlaceholder","path":"sprites/spr_solidPlaceholder/spr_solidPlaceholder.yy",},},
     {"id":{"name":"obj_solidBlock","path":"objects/obj_solidBlock/obj_solidBlock.yy",},},
+    {"id":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

@@ -1,6 +1,11 @@
 // inherit the parent event
 event_inherited();
 
-origin = x
+// roaming options
+origin = x;
+hspeed = roamSpeed;
 
-hspeed = roamSpeed
+// attacking ai
+attackingPlayer = false;
+startedAttack = false;
+onCooldown = false;
