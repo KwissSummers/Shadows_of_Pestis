@@ -40,10 +40,13 @@
     {"id":{"name":"spr_slashPlaceholder","path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",},},
     {"id":{"name":"obj_rangedAttack","path":"objects/obj_rangedAttack/obj_rangedAttack.yy",},},
     {"id":{"name":"spr_enemyPlaceholder","path":"sprites/spr_enemyPlaceholder/spr_enemyPlaceholder.yy",},},
+    {"id":{"name":"obj_mosquito","path":"objects/obj_mosquito/obj_mosquito.yy",},},
     {"id":{"name":"spr_solidPlaceholder","path":"sprites/spr_solidPlaceholder/spr_solidPlaceholder.yy",},},
     {"id":{"name":"obj_solidBlock","path":"objects/obj_solidBlock/obj_solidBlock.yy",},},
     {"id":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},},
+    {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_bloodProjectile","path":"objects/obj_bloodProjectile/obj_bloodProjectile.yy",},},
     {"id":{"name":"obj_slash","path":"objects/obj_slash/obj_slash.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_basicRatPlaceholder","path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},},
@@ -51,8 +54,8 @@
     {"id":{"name":"rm_dev","path":"rooms/rm_dev/rm_dev.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_dev","path":"rooms/rm_dev/rm_dev.yy",},},
+    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
