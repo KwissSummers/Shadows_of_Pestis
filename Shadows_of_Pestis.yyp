@@ -34,6 +34,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"spr_playerPlaceholder","path":"sprites/spr_playerPlaceholder/spr_playerPlaceholder.yy",},},
     {"id":{"name":"spr_rangedAttackPlaceholder","path":"sprites/spr_rangedAttackPlaceholder/spr_rangedAttackPlaceholder.yy",},},
     {"id":{"name":"spr_slashPlaceholder","path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",},},
@@ -47,10 +48,11 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_basicRatPlaceholder","path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},},
     {"id":{"name":"obj_basicRat","path":"objects/obj_basicRat/obj_basicRat.yy",},},
-    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"id":{"name":"rm_dev","path":"rooms/rm_dev/rm_dev.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"roomId":{"name":"rm_dev","path":"rooms/rm_dev/rm_dev.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
     {"name":"spr_rangedAttackPlaceholder","order":4,"path":"sprites/spr_rangedAttackPlaceholder/spr_rangedAttackPlaceholder.yy",},
     {"name":"spr_slashPlaceholder","order":2,"path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",},
     {"name":"obj_rangedAttack","order":4,"path":"objects/obj_rangedAttack/obj_rangedAttack.yy",},
