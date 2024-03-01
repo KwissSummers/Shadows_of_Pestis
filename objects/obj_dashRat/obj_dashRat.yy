@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_foursRat",
+    "path": "sprites/spr_foursRat/spr_foursRat.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

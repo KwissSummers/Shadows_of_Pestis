@@ -18,8 +18,10 @@
   ],
   "ResourceOrderSettings": [
     {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
+    {"name":"spr_walkingRat","order":14,"path":"sprites/spr_walkingRat/spr_walkingRat.yy",},
     {"name":"spr_rangedAttackPlaceholder","order":4,"path":"sprites/spr_rangedAttackPlaceholder/spr_rangedAttackPlaceholder.yy",},
     {"name":"spr_slashPlaceholder","order":2,"path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",},
+    {"name":"spr_plant","order":16,"path":"sprites/spr_plant/spr_plant.yy",},
     {"name":"obj_rangedAttack","order":4,"path":"objects/obj_rangedAttack/obj_rangedAttack.yy",},
     {"name":"spr_enemyPlaceholder","order":3,"path":"sprites/spr_enemyPlaceholder/spr_enemyPlaceholder.yy",},
     {"name":"obj_melee","order":9,"path":"objects/obj_melee/obj_melee.yy",},
@@ -41,9 +43,10 @@
     {"name":"obj_fly","order":13,"path":"objects/obj_fly/obj_fly.yy",},
     {"name":"spr_basicRatPlaceholder","order":5,"path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},
     {"name":"obj_deathBlock","order":11,"path":"objects/obj_deathBlock/obj_deathBlock.yy",},
-    {"name":"spr_walkingRat","order":13,"path":"sprites/spr_walkingRat/spr_walkingRat.yy",},
+    {"name":"spr_foursRat","order":13,"path":"sprites/spr_foursRat/spr_foursRat.yy",},
     {"name":"spr_mosqblood","order":9,"path":"sprites/spr_mosqblood/spr_mosqblood.yy",},
     {"name":"obj_plant","order":12,"path":"objects/obj_plant/obj_plant.yy",},
+    {"name":"spr_fly","order":15,"path":"sprites/spr_fly/spr_fly.yy",},
     {"name":"obj_basicRat","order":5,"path":"objects/obj_basicRat/obj_basicRat.yy",},
   ],
 }
