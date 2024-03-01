@@ -1,10 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_melee",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_dashRat",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -27,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_staff",
-    "path": "sprites/spr_staff/spr_staff.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
