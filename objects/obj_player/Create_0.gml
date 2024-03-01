@@ -30,3 +30,5 @@ attacking = false;
 // player combat values
 hp = startingHealth;
 invincible = false;
+
+instance_create_layer(x+5,y,"Instances",obj_melee)

@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_playerPlaceholder",
-  "bbox_bottom": 127,
-  "bbox_left": 39,
-  "bbox_right": 88,
-  "bbox_top": 7,
+  "name": "spr_mosquito",
+  "bbox_bottom": 109,
+  "bbox_left": 28,
+  "bbox_right": 98,
+  "bbox_top": 17,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f1c7abc-bf20-4c21-b6ab-9fdd5caf7d66",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e6008e76-0c16-44ac-ae24-8906f1f984ad",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"19d35444-6fa6-405a-9181-f30a0be2131b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9e261b03-7bd4-4a35-b22d-0d5bf37c37c1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_playerPlaceholder",
+    "name": "spr_mosquito",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0f1c7abc-bf20-4c21-b6ab-9fdd5caf7d66","path":"sprites/spr_playerPlaceholder/spr_playerPlaceholder.yy",},},},"Disabled":false,"id":"6853e475-444c-4334-993f-c04bda1542fb","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e6008e76-0c16-44ac-ae24-8906f1f984ad","path":"sprites/spr_mosquito/spr_mosquito.yy",},},},"Disabled":false,"id":"2b41dfba-b68f-42d1-9b6d-68d7358c7b17","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

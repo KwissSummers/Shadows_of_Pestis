@@ -37,8 +37,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_slashPlaceholder",
-    "path": "sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",
+    "name": "spr_mosqblood",
+    "path": "sprites/spr_mosqblood/spr_mosqblood.yy",
   },
   "spriteMaskId": null,
   "visible": true,

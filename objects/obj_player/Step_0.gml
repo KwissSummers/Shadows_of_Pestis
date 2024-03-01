@@ -71,14 +71,14 @@ if (!dashing)
 		horizontalSpeed -= hAccelSpeed;
 		dashDir = -1;
 		
-		image_xscale = -1;
+		image_xscale = (abs(image_xscale) * -1)
 	}
 	else if (keyboard_check(vk_right))
 	{
 		horizontalSpeed += hAccelSpeed;
 		dashDir = 1;
 		
-		image_xscale = 1;
+		image_xscale = abs(image_xscale);
 	}
 	// if the player isnt pressing A or D, decelerate the speed
 	else

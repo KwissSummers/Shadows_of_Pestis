@@ -46,8 +46,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemyPlaceholder",
-    "path": "sprites/spr_enemyPlaceholder/spr_enemyPlaceholder.yy",
+    "name": "spr_mosquito",
+    "path": "sprites/spr_mosquito/spr_mosquito.yy",
   },
   "spriteMaskId": null,
   "visible": true,
