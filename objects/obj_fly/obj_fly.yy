@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_fly",
+    "path": "sprites/spr_fly/spr_fly.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

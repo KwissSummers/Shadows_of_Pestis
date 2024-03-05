@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_plant",
+    "path": "sprites/spr_plant/spr_plant.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

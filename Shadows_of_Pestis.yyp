@@ -31,12 +31,13 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.1.102",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"spr_playerPlaceholder","path":"sprites/spr_playerPlaceholder/spr_playerPlaceholder.yy",},},
     {"id":{"name":"spr_walkingRat","path":"sprites/spr_walkingRat/spr_walkingRat.yy",},},
+    {"id":{"name":"spr_deathBlock","path":"sprites/spr_deathBlock/spr_deathBlock.yy",},},
     {"id":{"name":"spr_rangedAttackPlaceholder","path":"sprites/spr_rangedAttackPlaceholder/spr_rangedAttackPlaceholder.yy",},},
     {"id":{"name":"spr_slashPlaceholder","path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",},},
     {"id":{"name":"spr_plant","path":"sprites/spr_plant/spr_plant.yy",},},

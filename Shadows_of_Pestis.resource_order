@@ -19,6 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
     {"name":"spr_walkingRat","order":14,"path":"sprites/spr_walkingRat/spr_walkingRat.yy",},
+    {"name":"spr_deathBlock","order":18,"path":"sprites/spr_deathBlock/spr_deathBlock.yy",},
     {"name":"spr_rangedAttackPlaceholder","order":4,"path":"sprites/spr_rangedAttackPlaceholder/spr_rangedAttackPlaceholder.yy",},
     {"name":"spr_slashPlaceholder","order":2,"path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",},
     {"name":"spr_plant","order":16,"path":"sprites/spr_plant/spr_plant.yy",},

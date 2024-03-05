@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_deathBlock",
+    "path": "sprites/spr_deathBlock/spr_deathBlock.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

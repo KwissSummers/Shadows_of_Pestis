@@ -44,8 +44,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_basicRatPlaceholder",
-    "path": "sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",
+    "name": "spr_walkingRat",
+    "path": "sprites/spr_walkingRat/spr_walkingRat.yy",
   },
   "spriteMaskId": null,
   "visible": true,
