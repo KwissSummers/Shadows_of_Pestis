@@ -13,3 +13,6 @@ if (!hitPlayer && !other.invincible)
 	else
 		other.alarm[3] = other.iframeDurationFrames;
 }
+
+if (destroyOnHit)
+	instance_destroy();

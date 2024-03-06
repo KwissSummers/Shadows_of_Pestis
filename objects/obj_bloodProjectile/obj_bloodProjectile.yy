@@ -3,14 +3,15 @@
   "resourceVersion": "1.0",
   "name": "obj_bloodProjectile",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_solidBlock","path":"objects/obj_solidBlock/obj_solidBlock.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"propertyId":{"name":"destroyOnHit","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"propertyId":{"name":"destroyAfterTime","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"value":"False",},
+  ],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
@@ -33,7 +34,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"projectileSpeed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"5","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"projectileFramesTillHit","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"45","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"heightAboveTallestObject","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"projectileGravity","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.01","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"initialAngleDeg","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"20","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"initialVelocity","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"5","varType":0,},
   ],
   "solid": false,
   "spriteId": {

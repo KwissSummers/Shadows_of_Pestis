@@ -1,11 +1,14 @@
-// inherit the parent event
+// Inherit the parent event
 event_inherited();
 
 // roaming options
-origin = x;
 hspeed = roamSpeed;
 
-// attacking ai
-attackingPlayer = false;
-startedAttack = false;
-onCooldown = false;
+// starting y
+initialHeight = y;
+
+// attacking variables
+projectileObject = noone;
+framesSinceStartAttack = 0;
+startedAttacking = false;
+startingX = 0;

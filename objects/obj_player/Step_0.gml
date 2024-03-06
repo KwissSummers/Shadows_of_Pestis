@@ -175,7 +175,7 @@ if (keyboard_check_pressed(ord("X")) && !attacking)
 {
 	// create the slash and make it face the direction we are looking
 	var slashObject = instance_create_layer(x, y, "Instances", obj_slash);
-	slashObject.image_xscale = image_xscale;
+	slashObject.image_xscale = sign(image_xscale);
 	
 	// attack cooldown
 	// for the cooldown, im using the time that the attack will be out plus some extra frames
@@ -190,14 +190,13 @@ if (keyboard_check_pressed(ord("C")) && numCharges == 3 && !attacking)
 {
 	// create the ranged attack in the direction we are facing
 	var rangedAttackObject = instance_create_layer(x, y, "Instances", obj_rangedAttack);
-	rangedAttackObject.image_xscale = image_xscale;
+	rangedAttackObject.image_xscale = sign(image_xscale);
 	
 	// make it so we have no charges after we attack
 	numCharges = 0;
 	
 	// attack cooldown
 	attacking = true;
-	alarm[2] = rangedAttackObject.durationFrames + rangedAttackCooldownOffsetFrames;
 }
 
 #endregion
