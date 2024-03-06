@@ -20,13 +20,13 @@ if (setStartingRoamAreas)
 	// finding the object depending on if the enemy will be placed on the floor
 	if (disablePlaceOnFloor)
 	{
-		leftObject = collision_line(x, y, x - 5000, y, [obj_pathMarker, obj_solidBlock], true, true);
-		rightObject = collision_line(x, y, x + 5000, y, [obj_solidBlock, obj_pathMarker], true, true);
+		leftObject = collision_line(x, y, x - 5000, y, obj_pathMarker, true, true);
+		rightObject = collision_line(x, y, x + 5000, y, obj_pathMarker, true, true);
 	}
 	else
 	{
-		leftObject = collision_line(x, floorY - 16, x - 5000, floorY - 16, [obj_pathMarker, obj_solidBlock], true, true);
-		rightObject = collision_line(x, floorY - 16, x + 5000, floorY - 16, [obj_solidBlock, obj_pathMarker], true, true);
+		leftObject = collision_line(x, floorY - 16, x - 5000, floorY - 16, obj_pathMarker, true, true);
+		rightObject = collision_line(x, floorY - 16, x + 5000, floorY - 16, obj_pathMarker, true, true);
 	}
 
 	// setting the bounds
