@@ -1,6 +1,9 @@
 // inherit the parent event
 event_inherited();
 
+if (a)
+	show_debug_message(bounds)
+
 // enemy faces the direction its moving in
 if (hspeed != 0)
 	image_xscale = sign(hspeed);
@@ -64,8 +67,8 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < agroDistance
 else
 {
 	// if we are grounded
-	var floorObject = collision_line(x, y, x, y + 1000, obj_solidBlock, true, true);
-	if (instance_exists(floorObject) && floorObject.bbox_top - bbox_bottom < 2)
+	var grounded = place_meeting(x, y + 1, obj_solidBlock);
+	if (grounded)
 	{
 		// if the enemy has gone past its bounds, reverse
 		if (bbox_left < bounds[0])

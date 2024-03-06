@@ -1,7 +1,18 @@
 // iframes variable
 invincible = false;
 
-floorY = collision_line(x, y, x, y + 1000, obj_solidBlock, true, true).bbox_top;
+floorY = 0;
+
+// this is awful but without it, it goes through floating platforms
+for (var i = 0; i <= 1000; i += 50)
+{
+	var floorObject = collision_line(x, y, x, y + i, obj_solidBlock, true, true);
+	if (instance_exists(floorObject))
+	{
+		floorY = floorObject.bbox_top;
+		break;
+	}
+}
 
 // set the object on the floor if we want that
 if (!disablePlaceOnFloor)
