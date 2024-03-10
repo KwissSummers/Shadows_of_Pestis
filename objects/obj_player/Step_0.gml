@@ -197,6 +197,10 @@ if (keyboard_check_pressed(ord("C")) && numCharges == 3 && !attacking)
 	
 	// attack cooldown
 	attacking = true;
+	alarm[2] = rangedAttackCooldownFrames;
 }
+
+if (hp > startingHealth)
+	hp = startingHealth;
 
 #endregion
