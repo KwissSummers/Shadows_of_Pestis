@@ -15,5 +15,15 @@ if (!array_contains(hitEnemies, other) && !other.invincible)
 	
 	// add a charge to the player per enemy hit
 	if (instance_exists(obj_player) && obj_player.numCharges < 3)
-		obj_player.numCharges++;
+	{
+		if (obj_player.numHits == obj_player.numHitsToCharge)
+		{
+			obj_player.numHits = 1;
+			obj_player.numCharges++;
+		}
+		else
+		{
+			obj_player.numHits++;
+		}
+	}
 }

@@ -109,6 +109,67 @@ else
 	verticalSpeed = 0;
 }
 
+#endregion
+
+#region combat
+
+// basic slash attack
+// if the button is pressed and we arent attacking already
+if (keyboard_check_pressed(ord("X")) && !attacking)
+{
+	// create the slash and make it face the direction we are looking
+	var slashObject = instance_create_layer(x, y, "Instances", obj_slash);
+	slashObject.image_xscale = sign(image_xscale);
+	
+	// attack cooldown
+	// for the cooldown, im using the time that the attack will be out plus some extra frames
+	// so you can never attack while a slash is out (unless the offset is negative)
+	attacking = true;
+	alarm[2] = slashObject.durationFrames + slashCooldownOffsetFrames;
+}
+
+// ranged attack
+// if the button is pressed, we arent attacking already, and we have 3 charges
+if (keyboard_check_pressed(ord("C")) && numCharges > 0 && !attacking)
+{
+	// create the ranged attack in the direction we are facing
+	var rangedAttackObject = instance_create_layer(x, y, "Instances", obj_rangedAttack);
+	rangedAttackObject.image_xscale = sign(image_xscale);
+	
+	// make it so we have no charges after we attack
+	numCharges--;
+	
+	// attack cooldown
+	attacking = true;
+	alarm[2] = rangedAttackCooldownFrames;
+}
+
+// charge ranged attack charges
+if (keyboard_check(ord("V")) && numCharges < 3)
+{
+	chargingFrames++;
+	attacking = true;
+	horizontalSpeed = 0;
+	
+	// if the player is still charging after framesPerCharge frames, add a charge
+	if (chargingFrames == framesPerCharge)
+	{
+		numCharges++;
+		chargingFrames = 0;
+	}
+}
+else
+{
+	// if not charging, stop charging (lol)
+	chargingFrames = 0;
+	attacking = false;
+}
+
+if (hp > startingHealth)
+	hp = startingHealth;
+
+#endregion
+
 #region moving player and collision checks
 
 // clamp vertical speed to the max falling speed
@@ -162,45 +223,5 @@ if (array_length(verticalCollision) > 0)
 		y = ceil(collider.bbox_bottom + sprite_height / 2) + 0.1;
 	}
 }
-
-#endregion
-
-#endregion
-
-#region combat
-
-// basic slash attack
-// if the button is pressed and we arent attacking already
-if (keyboard_check_pressed(ord("X")) && !attacking)
-{
-	// create the slash and make it face the direction we are looking
-	var slashObject = instance_create_layer(x, y, "Instances", obj_slash);
-	slashObject.image_xscale = sign(image_xscale);
-	
-	// attack cooldown
-	// for the cooldown, im using the time that the attack will be out plus some extra frames
-	// so you can never attack while a slash is out (unless the offset is negative)
-	attacking = true;
-	alarm[2] = slashObject.durationFrames + slashCooldownOffsetFrames;
-}
-
-// ranged attack
-// if the button is pressed, we arent attacking already, and we have 3 charges
-if (keyboard_check_pressed(ord("C")) && numCharges == 3 && !attacking)
-{
-	// create the ranged attack in the direction we are facing
-	var rangedAttackObject = instance_create_layer(x, y, "Instances", obj_rangedAttack);
-	rangedAttackObject.image_xscale = sign(image_xscale);
-	
-	// make it so we have no charges after we attack
-	numCharges = 0;
-	
-	// attack cooldown
-	attacking = true;
-	alarm[2] = rangedAttackCooldownFrames;
-}
-
-if (hp > startingHealth)
-	hp = startingHealth;
 
 #endregion

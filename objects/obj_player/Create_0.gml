@@ -21,6 +21,8 @@ framesSinceGrounded = 0;
 
 // starting charges for ranged attack
 numCharges = 0;
+numHits = 1;
+chargingFrames = 0;
 
 // current combat state
 // TODO: whenever we start doing custom textures and polish, make the attacks look correct
