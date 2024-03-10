@@ -32,3 +32,9 @@ hp = startingHealth;
 invincible = false;
 
 instance_create_layer(x+5,y,"Instances",obj_melee)
+
+//Shader pointers
+_uniColor = shader_get_uniform(shdrHit, "u_colour");
+_uniMix = shader_get_uniform(shdrHit, "u_mix");
+_color = [1.0, 1.0, 1.0];
+_mix = 0.0;
