@@ -1,7 +1,7 @@
 {
   "$GMShader":"",
-  "%Name":"shdrHit",
-  "name":"shdrHit",
+  "%Name":"shdrOverlay",
+  "name":"shdrOverlay",
   "parent":{
     "name":"Shaders",
     "path":"folders/Shaders.yy",

@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_slashPlaceholder",
-    "path":"sprites/spr_slashPlaceholder/spr_slashPlaceholder.yy",
+    "name":"spr_ESlash",
+    "path":"sprites/spr_ESlash/spr_ESlash.yy",
   },
   "spriteMaskId":null,
   "visible":true,

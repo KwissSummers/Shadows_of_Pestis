@@ -25,6 +25,7 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < agroDistance
 				startingX = x;
 				
 			startedAttacking = true;
+			audio_play_sound(snd_enemyMelee, 1, false);
 			
 			// stop movingg if we arent dashing
 			if (abs(hspeed) != dashSpeed)

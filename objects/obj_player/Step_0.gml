@@ -17,6 +17,9 @@ if (!dashing)
 		verticalSpeed = 0;
 	
 		// if we touch the ground we get all our jumps back and set frames since grounded back to 0
+		if(jumpsRemaining != numJumps){
+			audio_play_sound(snd_land, 1, false);
+		}
 		jumpsRemaining = numJumps;
 		framesSinceGrounded = 0;
 		
@@ -52,6 +55,7 @@ if (!dashing)
 			
 			// jumping speed
 			verticalSpeed = -jumpSpeed;
+			audio_play_sound(snd_jump, 1, false);
 		
 			// remove 1 from remaining jumps since we jumped
 			jumpsRemaining--;
@@ -98,6 +102,7 @@ if (!dashing)
 		
 		// go dash speed in the direction the player was moving
 		horizontalSpeed = dashDir * dashSpeed;
+		audio_play_sound(snd_dash, 1, false);
 		
 		alarm[0] = framesDashing; 
 	}
@@ -120,6 +125,7 @@ if (keyboard_check_pressed(ord("X")) && !attacking)
 	// create the slash and make it face the direction we are looking
 	var slashObject = instance_create_layer(x, y, "Instances", obj_slash);
 	slashObject.image_xscale = sign(image_xscale);
+	audio_play_sound(snd_playerMelee, 1, false);
 	
 	// attack cooldown
 	// for the cooldown, im using the time that the attack will be out plus some extra frames

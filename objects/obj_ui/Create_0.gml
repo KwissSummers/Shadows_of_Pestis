@@ -22,3 +22,4 @@ chargesStart = 5;
 chargesEnd = 34;
 chargesWidth = chargesEnd - chargesStart;
 chargesHeight = sprite_get_height(spr_chargesUI);
+audio_play_sound(snd_backgroundMusic, 0, true);

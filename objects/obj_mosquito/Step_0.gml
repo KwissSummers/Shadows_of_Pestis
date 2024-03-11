@@ -33,6 +33,7 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < agroDistance
 				// create slash object and place it accordingly
 				projectileObject = instance_create_layer(x, y, "Instances", obj_bloodProjectile);
 				projectileObject.image_xscale = image_xscale;
+				audio_play_sound(snd_mosqShoot, 1, false);
 			}
 			// if we are at the end of the endlag of the attack
 			else if (framesSinceStartAttack == windUpFrames + endlagFrames)

@@ -4,6 +4,7 @@ currentLobAttackNum++;
 
 // create the projectile, all logic is done on that
 instance_create_layer(x, y, "BossProjectiles", obj_bossBloodProjectile);
+audio_play_sound(snd_mosqShoot, 1, false)
 
 // if we can fire more projectiles
 if (currentLobAttackNum < lobAttacks)
