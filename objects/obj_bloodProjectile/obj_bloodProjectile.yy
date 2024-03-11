@@ -35,10 +35,6 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"projectileFramesTillHit","filters":[],"listItems":[],"multiselect":false,"name":"projectileFramesTillHit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"45","varType":0,},
-    {"$GMObjectProperty":"","%Name":"heightAboveTallestObject","filters":[],"listItems":[],"multiselect":false,"name":"heightAboveTallestObject","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
-    {"$GMObjectProperty":"","%Name":"projectileGravity","filters":[],"listItems":[],"multiselect":false,"name":"projectileGravity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.01","varType":0,},
-    {"$GMObjectProperty":"","%Name":"initialAngleDeg","filters":[],"listItems":[],"multiselect":false,"name":"initialAngleDeg","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
-    {"$GMObjectProperty":"","%Name":"initialVelocity","filters":[],"listItems":[],"multiselect":false,"name":"initialVelocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

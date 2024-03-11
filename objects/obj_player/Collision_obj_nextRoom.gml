@@ -1,6 +1,2 @@
 /// @description Boss Room
-room_goto_next();
-
-
-
-
+room_goto(rm_boss);
