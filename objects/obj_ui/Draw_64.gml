@@ -5,6 +5,7 @@ if (instance_exists(obj_player))
 	charges = obj_player.numCharges;
 }
 
+
 // draw the background
 draw_sprite(spr_backgroundUI, -1, xOffset, yOffset);
 

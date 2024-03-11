@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menuText",
+  "%Name":"obj_title",
   "eventList":[],
   "managed":true,
-  "name":"obj_menuText",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"propertyId":{"name":"text","path":"objects/obj_text/obj_text.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
-  ],
+  "name":"obj_title",
+  "overriddenProperties":[],
   "parent":{
     "name":"Menu UI",
     "path":"folders/Objects/Menu UI.yy",
   },
-  "parentObjectId":{
-    "name":"obj_text",
-    "path":"objects/obj_text/obj_text.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_title",
+    "path":"sprites/spr_title/spr_title.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
