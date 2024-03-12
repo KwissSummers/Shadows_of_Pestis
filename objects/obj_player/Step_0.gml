@@ -80,7 +80,7 @@ if (!dashing)
 		dashDir = -1;
 		
 		image_xscale = (abs(image_xscale) * -1)
-		if(grounded){
+		if(verticalSpeed == 0){
 			sprite_index = spr_playerWalk;
 		}
 	}
@@ -90,7 +90,7 @@ if (!dashing)
 		dashDir = 1;
 		
 		image_xscale = abs(image_xscale);
-		if(grounded){
+		if(verticalSpeed == 0){
 			sprite_index = spr_playerWalk;
 		}
 	}
