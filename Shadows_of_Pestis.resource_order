@@ -76,10 +76,7 @@
     {"name":"snd_land","order":5,"path":"sounds/snd_land/snd_land.yy",},
     {"name":"snd_mosqShoot","order":2,"path":"sounds/snd_mosqShoot/snd_mosqShoot.yy",},
     {"name":"snd_step","order":7,"path":"sounds/snd_step/snd_step.yy",},
-<<<<<<< Updated upstream
     {"name":"snd_gameOver","order":10,"path":"sounds/snd_gameOver/snd_gameOver.yy",},
-=======
->>>>>>> Stashed changes
     {"name":"spr_backgroundTile","order":40,"path":"sprites/spr_backgroundTile/spr_backgroundTile.yy",},
     {"name":"spr_backgroundUI","order":25,"path":"sprites/spr_backgroundUI/spr_backgroundUI.yy",},
     {"name":"spr_basicRatPlaceholder","order":5,"path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},

@@ -100,10 +100,7 @@
     {"id":{"name":"snd_mosqShoot","path":"sounds/snd_mosqShoot/snd_mosqShoot.yy",},},
     {"id":{"name":"snd_playerMelee","path":"sounds/snd_playerMelee/snd_playerMelee.yy",},},
     {"id":{"name":"snd_step","path":"sounds/snd_step/snd_step.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"snd_gameOver","path":"sounds/snd_gameOver/snd_gameOver.yy",},},
-=======
->>>>>>> Stashed changes
     {"id":{"name":"spr_backgroundTile","path":"sprites/spr_backgroundTile/spr_backgroundTile.yy",},},
     {"id":{"name":"spr_backgroundUI","path":"sprites/spr_backgroundUI/spr_backgroundUI.yy",},},
     {"id":{"name":"spr_basicRatPlaceholder","path":"sprites/spr_basicRatPlaceholder/spr_basicRatPlaceholder.yy",},},
