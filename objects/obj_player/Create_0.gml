@@ -4,7 +4,6 @@ horizontalSpeed = 0;
 verticalSpeed = 0;
 moveDirection = 0;
 
-
 // start the player off with the max amount of jumps (will probably change later)
 jumpsRemaining = numJumps;
 

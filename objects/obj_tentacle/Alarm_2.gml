@@ -1,0 +1,1 @@
+startRise = true;

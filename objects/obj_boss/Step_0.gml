@@ -280,8 +280,10 @@ switch (attackState)
 		{
 			attacking = true;
 			
-			// give a warning
-			obj_warning.visible = true;
+			var spriteWidth = sprite_get_width(spr_bossTent);
+			var spriteHeight = sprite_get_height(spr_bossTent);
+
+			instance_create_layer(64 + spriteWidth, floorY + spriteHeight / 2 - 2, "Instances", obj_tentacle);
 			
 			// start the attack
 			alarm[8] = tentacleWindupFrames;

@@ -3,4 +3,6 @@ instance_create_layer(x, y, "Instances", obj_genericTransition, {roomToTransitio
 
 instance_create_layer(x, y, "Instances", obj_deathAnim);
 
+audio_stop_all();
+
 instance_destroy(obj_melee);

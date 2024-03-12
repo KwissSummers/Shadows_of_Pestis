@@ -59,7 +59,6 @@
     {"name":"obj_title","order":9,"path":"objects/obj_title/obj_title.yy",},
     {"name":"obj_ui","order":18,"path":"objects/obj_ui/obj_ui.yy",},
     {"name":"obj_winText","order":13,"path":"objects/obj_winText/obj_winText.yy",},
-    {"name":"obj_warning","order":29,"path":"objects/obj_warning/obj_warning.yy",},
     {"name":"rm_boss","order":2,"path":"rooms/rm_boss/rm_boss.yy",},
     {"name":"rm_credits","order":1,"path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"rm_gameOver","order":3,"path":"rooms/rm_gameOver/rm_gameOver.yy",},
