@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"obj_plant",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"iframeDurationFrames","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
