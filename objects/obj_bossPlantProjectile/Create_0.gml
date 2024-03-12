@@ -12,3 +12,6 @@ if (instance_exists(obj_player))
 }
 else
 	instance_destroy();
+	
+image_xscale = 2;
+image_yscale = 2;
