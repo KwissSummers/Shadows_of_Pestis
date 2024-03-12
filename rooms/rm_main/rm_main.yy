@@ -104,8 +104,8 @@
           -2147483648,-16,2,-113,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tls_sewerWater","path":"tilesets/tls_sewerWater/tls_sewerWater.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":34,"SerialiseWidth":500,"TileCompressedData":[
-          -5382,-2147483648,4,3,1,1,2,-209,-2147483648,1,3,-4,1,1,2,-494,-2147483648,1,0,-1278,-2147483648,5,3,
-          1,1,2,2,-733,-2147483648,1,3,-4,1,1,2,-764,-2147483648,1,1,-1994,-2147483648,4,3,1,1,2,-718,-2147483648,
+          -5382,-2147483648,4,3,1,1,2,-209,-2147483648,1,3,-4,1,1,2,-494,-2147483648,1,0,-1278,-2147483648,1,3,
+          -3,1,1,2,-733,-2147483648,1,3,-4,1,1,2,-764,-2147483648,1,1,-1994,-2147483648,4,3,1,1,2,-718,-2147483648,
           1,3,-4,1,1,2,-929,-2147483648,1,3,-4,1,1,2,-4,0,-541,-2147483648,1,3,-4,1,1,2,-785,-2147483648,1,3,-4,
           1,1,2,-3118,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tls_platform","path":"tilesets/tls_platform/tls_platform.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
