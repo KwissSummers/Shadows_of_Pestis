@@ -3,7 +3,6 @@
 // shouldnt be able to do any movement while dashing
 if (!dashing)
 {
-	
 	#region jumping and gravity
 
 	// making sure we have gravity
@@ -13,6 +12,8 @@ if (!dashing)
 	var grounded = place_meeting(x, y + 1, obj_solidBlock);
 	if (grounded)
 	{
+		if(horizontalSpeed == 0)
+			sprite_index = spr_playerPlaceholder
 		// stop gravity from doing anything
 		verticalSpeed = 0;
 	
@@ -56,6 +57,9 @@ if (!dashing)
 			// jumping speed
 			verticalSpeed = -jumpSpeed;
 			audio_play_sound(snd_jump, 1, false);
+			if(verticalSpeed < 0 && jumping){
+				sprite_index = spr_playerJump;
+			}
 		
 			// remove 1 from remaining jumps since we jumped
 			jumpsRemaining--;
@@ -76,6 +80,9 @@ if (!dashing)
 		dashDir = -1;
 		
 		image_xscale = (abs(image_xscale) * -1)
+		if(grounded){
+			sprite_index = spr_playerWalk;
+		}
 	}
 	else if (keyboard_check(vk_right))
 	{
@@ -83,10 +90,14 @@ if (!dashing)
 		dashDir = 1;
 		
 		image_xscale = abs(image_xscale);
+		if(grounded){
+			sprite_index = spr_playerWalk;
+		}
 	}
 	// if the player isnt pressing A or D, decelerate the speed
 	else
 		horizontalSpeed -= sign(horizontalSpeed) * hDecelSpeed;
+		
 	
 	// if the speed is low enough, just set it to 0, else it can bounce around never getting to 0 speed
 	if (abs(horizontalSpeed) <= 1)
@@ -99,6 +110,9 @@ if (!dashing)
 	if (keyboard_check_pressed(ord("Z")) && dashDir != 0 && !onDashCooldown)
 	{
 		dashing = true;
+		sprite_index = spr_playerDash
+		var dashTrail = instance_create_layer(x,y,"Instances",obj_dashTrail);
+		dashTrail.image_xscale = image_xscale
 		
 		// go dash speed in the direction the player was moving
 		horizontalSpeed = dashDir * dashSpeed;
