@@ -3,6 +3,8 @@ event_inherited();
 
 randomize();
 
+startingHP = hp;
+
 nextAttackFrameCount = 0;
 nextAttackFrames = irandom_range(nextAttackLowerFrames, nextAttackUpperFrames);
 
@@ -43,7 +45,8 @@ enum AttackStates
 	Slash,
 	Projectile,
 	Spawn,
-	Dash
+	Dash,
+	Tentacle
 }
 attackState = AttackStates.Idle;
 

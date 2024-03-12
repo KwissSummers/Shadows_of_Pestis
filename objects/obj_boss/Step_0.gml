@@ -14,10 +14,16 @@ switch (attackState)
 		{
 			// set values for next idle phase
 			nextAttackFrameCount = 0;
+			
 			nextAttackFrames = irandom_range(nextAttackLowerFrames, nextAttackUpperFrames);
 			
 			// 5 attacks
-			var attackNum = irandom(4);
+			var attackNum;
+			if (hp <= startingHP / 2)
+				attackNum = irandom(5);
+			else
+				attackNum = irandom(4);
+			
 			switch(attackNum)
 			{
 				case 0:
@@ -34,6 +40,9 @@ switch (attackState)
 					break;
 				case 4:
 					attackState = AttackStates.Dash;
+					break;
+				case 5:
+					attackState = AttackStates.Tentacle;
 					break;
 			}
 		}
@@ -257,5 +266,26 @@ switch (attackState)
 		else
 			image_xscale = -1;
 	
+		break;
+		
+	case AttackStates.Tentacle:
+		// look towards the player
+		if (instance_exists(obj_player))
+		{
+			image_xscale = sign(obj_player.x - x);
+		}
+		
+		// start attacking
+		if (!attacking)
+		{
+			attacking = true;
+			
+			// give a warning
+			obj_warning.visible = true;
+			
+			// start the attack
+			alarm[8] = tentacleWindupFrames;
+		}
+		
 		break;
 }

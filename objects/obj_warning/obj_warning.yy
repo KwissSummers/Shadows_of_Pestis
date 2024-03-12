@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_solidBlock",
+  "%Name":"obj_warning",
   "eventList":[],
   "managed":true,
-  "name":"obj_solidBlock",
+  "name":"obj_warning",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_solidPlaceholder",
-    "path":"sprites/spr_solidPlaceholder/spr_solidPlaceholder.yy",
+    "name":"spr_warning",
+    "path":"sprites/spr_warning/spr_warning.yy",
   },
   "spriteMaskId":null,
   "visible":false,
