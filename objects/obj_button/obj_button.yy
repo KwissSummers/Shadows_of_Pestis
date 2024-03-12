@@ -28,6 +28,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
+    {"$GMObjectProperty":"","%Name":"clickable","filters":[],"listItems":[],"multiselect":false,"name":"clickable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"","%Name":"buttonText","filters":[],"listItems":[],"multiselect":false,"name":"buttonText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sample","varType":2,},
   ],
   "resourceType":"GMObject",

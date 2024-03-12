@@ -1,9 +1,6 @@
 // inherit the parent event
 event_inherited();
 
-if (a)
-	show_debug_message(bounds)
-
 // enemy faces the direction its moving in
 if (hspeed != 0)
 	image_xscale = sign(hspeed);
@@ -25,7 +22,6 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < agroDistance
 				startingX = x;
 				
 			startedAttacking = true;
-			audio_play_sound(snd_enemyMelee, 1, false);
 			
 			// stop movingg if we arent dashing
 			if (abs(hspeed) != dashSpeed)
@@ -39,6 +35,8 @@ if (instance_exists(obj_player) && distance_to_object(obj_player) < agroDistance
 			// if we have fully winded up
 			if (framesSinceStartAttack == windUpFrames)
 			{
+				audio_play_sound(snd_enemyMelee, 1, false);
+				
 				// launch towards the player
 				hspeed = image_xscale * dashSpeed;
 				verticalSpeed = -verticalLaunchSpeed;

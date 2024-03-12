@@ -7,7 +7,7 @@ var insideButtonX = (mx <= bbox_right) && (mx >= bbox_left);
 var insideButtonY = (my <= bbox_bottom) && (my >= bbox_top);
 
 // if clicking the button
-if (insideButtonX && insideButtonY)
+if (insideButtonX && insideButtonY && clickable)
 {
 	// activate the button event (just alarm 0 for now)
 	event_perform(ev_alarm, 0);

@@ -27,6 +27,9 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"text","filters":[],"listItems":[],"multiselect":false,"name":"text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Sample Text","varType":2,},
+    {"$GMObjectProperty":"","%Name":"textFont","filters":[
+        "GMFont",
+      ],"listItems":[],"multiselect":false,"name":"textFont","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fnt_default","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

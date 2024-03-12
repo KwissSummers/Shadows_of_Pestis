@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_nextRoom",
+  "%Name":"obj_gameOverText",
   "eventList":[],
   "managed":true,
-  "name":"obj_nextRoom",
+  "name":"obj_gameOverText",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Menu UI",
+    "path":"folders/Objects/Menu UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_nextRoom",
-    "path":"sprites/spr_nextRoom/spr_nextRoom.yy",
+    "name":"spr_gameOverText",
+    "path":"sprites/spr_gameOverText/spr_gameOverText.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

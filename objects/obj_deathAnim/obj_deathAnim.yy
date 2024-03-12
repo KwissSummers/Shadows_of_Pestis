@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_nextRoom",
-  "eventList":[],
+  "%Name":"obj_deathAnim",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_nextRoom",
+  "name":"obj_deathAnim",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_nextRoom",
-    "path":"sprites/spr_nextRoom/spr_nextRoom.yy",
+    "name":"spr_deathAni",
+    "path":"sprites/spr_deathAni/spr_deathAni.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
