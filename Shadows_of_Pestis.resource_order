@@ -112,6 +112,7 @@
     {"name":"spr_walkingRatAtt","order":22,"path":"sprites/spr_walkingRatAtt/spr_walkingRatAtt.yy",},
     {"name":"spr_warning","order":38,"path":"sprites/spr_warning/spr_warning.yy",},
     {"name":"spr_winText","order":37,"path":"sprites/spr_winText/spr_winText.yy",},
+    {"name":"spr_bossSpawn","order":38,"path":"sprites/spr_bossSpawn/spr_bossSpawn.yy",},
     {"name":"tls_platform","order":2,"path":"tilesets/tls_platform/tls_platform.yy",},
     {"name":"tls_sewerWater","order":1,"path":"tilesets/tls_sewerWater/tls_sewerWater.yy",},
   ],
