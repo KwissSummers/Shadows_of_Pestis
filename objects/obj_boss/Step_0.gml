@@ -131,7 +131,7 @@ switch (attackState)
 				// move the boss down towards the player
 				// square easing (?) is used here to *simulate* gravity
 				var slashEasing = sqr(slashMoveYFrameCount / slashMoveYFrames);
-				y = lerp(originalHeight, floorY - sprite_height / 2, slashEasing);
+				y = lerp(originalHeight, obj_player.y, slashEasing);
 				
 				slashMoveYFrameCount++;
 			}
@@ -223,7 +223,7 @@ switch (attackState)
 		startMovingDashAttack = true;
 	
 		// if we are moving towards the dash location
-		if (dashMoveFrameCount <= dashMoveFrames && !attacking)
+		if (dashMoveFrameCount <= dashMoveFrames && !attacking && instance_exists(obj_player))
 		{
 			// took me a while to calculate this movement
 			// slows down while approaching dash location
@@ -232,7 +232,7 @@ switch (attackState)
 			
 			// move the boss
 			x = lerp(beforeMoveLerpX, chosenDashSide, easing);
-			y = lerp(beforeMoveLerpY, floorY - sprite_height / 2, easing);
+			y = lerp(beforeMoveLerpY, obj_player.y, easing);
 		
 			dashMoveFrameCount++;
 		}
@@ -283,7 +283,7 @@ switch (attackState)
 			var spriteWidth = sprite_get_width(spr_bossTent);
 			var spriteHeight = sprite_get_height(spr_bossTent);
 
-			instance_create_layer(64 + spriteWidth, floorY + spriteHeight / 2 - 2, "Instances", obj_tentacle);
+			instance_create_layer(64 + spriteWidth, floorY + spriteHeight / 2 - 4, "Instances", obj_tentacle);
 			
 			// start the attack
 			alarm[8] = tentacleWindupFrames;

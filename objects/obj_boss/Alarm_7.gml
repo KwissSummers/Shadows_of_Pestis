@@ -2,7 +2,8 @@
 
 // create slash object and place it accordingly
 var slashObject = instance_create_layer(x, y, "BossProjectiles", obj_enemySlash);
-slashObject.image_xscale = image_xscale;
+slashObject.image_xscale = image_xscale * 2;
+slashObject.image_yscale = 2;
 audio_play_sound(snd_enemyMelee, 1, false)
 				
 var offset = image_xscale * (abs(sprite_width) / 2 + abs(slashObject.sprite_width) / 2);

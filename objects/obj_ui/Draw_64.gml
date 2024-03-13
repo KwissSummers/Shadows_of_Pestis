@@ -4,6 +4,10 @@ if (instance_exists(obj_player))
 	hp = obj_player.hp;
 	charges = obj_player.numCharges;
 }
+else
+{
+	hp = 0;
+}
 
 
 // draw the background

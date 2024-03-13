@@ -1,8 +1,8 @@
 // get the players hp
 if (instance_exists(obj_boss))
-{
 	hp = obj_boss.hp;
-}
+else
+	hp = 0;
 
 
 // draw the background
