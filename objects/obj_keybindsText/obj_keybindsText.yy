@@ -5,7 +5,7 @@
   "managed":true,
   "name":"obj_keybindsText",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"propertyId":{"name":"text","path":"objects/obj_text/obj_text.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Movement: Arrow Keys\\nJump: Up Arrow/Space\\nDash: Z\\nSlash Attack: X\\nRanged Attack: C\\nFullscreen: Alt + Enter",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"propertyId":{"name":"text","path":"objects/obj_text/obj_text.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Movement: Arrow Keys\\nJump: Up Arrow/Space\\nDash: Z\\nSlash Attack: X\\nRanged Attack: C\\nCharge Ranged Attack: Hold V\\nFullscreen: Alt + Enter",},
   ],
   "parent":{
     "name":"Menu UI",

@@ -138,19 +138,11 @@ switch (attackState)
 			// start an attack
 			else if (!attacking)
 			{
-				// keep the boss right on the floor
-				y = floorY - sprite_height / 2;
-				
 				attacking = true;
 				slashMoveXFrameCount = 0;
 				slashMoveYFrameCount = 0;
 				
 				alarm[7] = slashWindupFrames;
-			}
-			else
-			{
-				// keep the boss on the floor until the state changes after the attack
-				y = floorY - sprite_height / 2;
 			}
 		}
 		

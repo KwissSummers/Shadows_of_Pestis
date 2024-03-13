@@ -12,7 +12,7 @@
   "name":"obj_tentacle",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"propertyId":{"name":"damage","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"propertyId":{"name":"destroyFrames","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"180",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemySlash","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"propertyId":{"name":"destroyFrames","path":"objects/obj_enemySlash/obj_enemySlash.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"90",},
   ],
   "parent":{
     "name":"Objects",
@@ -37,7 +37,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"riseFrames","filters":[],"listItems":[],"multiselect":false,"name":"riseFrames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
-    {"$GMObjectProperty":"","%Name":"spawnNextTentacleFrames","filters":[],"listItems":[],"multiselect":false,"name":"spawnNextTentacleFrames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"","%Name":"spawnNextTentacleFrames","filters":[],"listItems":[],"multiselect":false,"name":"spawnNextTentacleFrames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"","%Name":"riseWindupFrames","filters":[],"listItems":[],"multiselect":false,"name":"riseWindupFrames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
   ],
   "resourceType":"GMObject",
